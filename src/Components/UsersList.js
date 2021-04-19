@@ -1,7 +1,7 @@
 import React from 'react';
 import UsersItems from './UsersItems';
 
-// component display all users in our state frin App js
+// component display all users in our state from App js
 function UsersList (props){
 
     return (
@@ -10,7 +10,7 @@ function UsersList (props){
             {/* we loop through all the users and for every user,
          we display a UserItem component. We also pass the user as a prop
          to UserItem so that we can display it */}
-            <h2>Users List</h2>
+            <h4>Users List</h4>
             {/*loop all users*/}
             {props.allUsers.map((user) => (           
                <UsersItems user={user} />

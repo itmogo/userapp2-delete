@@ -1,12 +1,14 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 
 function UsersForm(props) 
 {
     const [state, setState] = useState({
-        username: '',
-        email: '',
-        password: '',
-        country: '', 
+        username:'',
+        email:'',
+        country:'', 
+        telephone:'',
+        password:''
+        
     });
 
     // a function called to handle onchange event
@@ -30,8 +32,8 @@ function UsersForm(props)
 
     return( <div>
 <div className="container">
-  <h2>Users Form</h2>
-  <form className="form-horizontal">
+  <h4>Users Form</h4>
+  <form className="form-horizontal back">
     <div className="form-group">
       <label className="control-label col-md-1" for="username">Full Name:</label>
       <div className="col-md-3">
@@ -70,6 +72,19 @@ function UsersForm(props)
             value={state.country}
             onChange={handleOnChange} // used to handle onchange
             name="country"/>
+      </div>
+    </div>
+    <div className="form-group">
+      <label className="control-label col-md-1" for="country">Telephone:</label>
+      <div className="col-md-3">
+        <input 
+            type="number" 
+            className="form-control"
+            id="number"
+            placeholder="Enter your telephone number"
+            value={state.telephone}
+            onChange={handleOnChange} // used to handle onchange
+            name="telephone"/>
       </div>
     </div>
     <div className="form-group">
