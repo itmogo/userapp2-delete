@@ -1,15 +1,10 @@
 .border{
     margin-top: 15px;
-    border: 8px solid #778788;    
+    border: 8px solid #778788;   
+    background-color: lightblue;
 }
 
-.background{
-    background-color: lightgray;
-    color: blue;
-    margin-top: 11px;
-    margin-left: 10px;
-    margin-right: 10px; 
-}
+
 
 h4{
     text-align:left;
